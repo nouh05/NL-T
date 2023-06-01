@@ -1,63 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WebDev Studio</title>
-    <!-- import javascript variables and functions -->
-    <script src="app.js" defer></script>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-    rel="stylesheet"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <!-- Navbar Section -->
     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo"> Home</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links">
-                        Home
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="about.html" class="navbar__links">
-                        About
-                    </a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">
-                        Rent
-                    </a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="/" class="button">
-                        Sign Up
-                    </a>
-                </li>
-            </ul>
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">NL-T Properties</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
         </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Services</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>NL&T Properties</h1>
-                <h2>Some Phrase</h2>
-                <p>Find housing today...or something like that</p>
-                <button class="main__btn"><a href="/">Get Started</a></button>
-            </div>
-            <div class="main__img--container">
-                <img src="images/undraw_house_searching_re_stk8.svg" alt="pic" id="main__img">
-            </div>
-        </div>
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Find a House or Apartment</h1>
+        <p class="hero__description">Unlimited Possibilities</p>
+        <button class="main__btn"><a href="#">Explore</a></button>
+      </div>
     </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><img src="images/undraw_house_searching_re_stk8.svg" alt="pic" id="main__img"></div>
+        </div>
+        <div class="main__content">
+          <h1>What do we do?</h1>
+          <h2>We provide housing for those looking to rent</h2>
+          <p>Schedule a call to learn more about our services</p>
+          <button class="main__btn"><a href="#">Schedule Call</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Our Services</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Rent an apartment</h2>
+          <p>Click below to see options</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Rent a house</h2>
+          <p>Click below to see options</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Pay Rent</h2>
+          <p>Click below to pay rent</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Ask a quesiton</h2>
+          <p>Click below with any questions or concerns</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Create an Account Here</h1>
+          <h2>Sign Up Today</h2>
+          <p>See what makes us different</p>
+          <button class="main__btn"><a href="#">Sign Up</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 
     <script src="app.js"></script>
   </body>
